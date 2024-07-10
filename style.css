@@ -13,7 +13,7 @@ body {
 }
 
 .sidebar {
-    width: 220px;
+    width: 180px;
     background-color: #1abc9c;
     color: white;
     padding: 20px;
@@ -86,8 +86,10 @@ h2 {
 }
 
 img {
-    max-width: 150px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 35%;
+    object-fit: cover;
     margin-right: 20px;
 }
 
@@ -101,6 +103,76 @@ img {
     flex-direction: column;
 }
 
+.passions {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.passions li {
+    margin: 5px 0;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.education-item {
+    margin-bottom: 10px;
+}
+
+.education-item h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #1abc9c;
+}
+
+.education-item p {
+    margin: 5px 0 0;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #1abc9c;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background: #1abc9c;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 3px #1abc9c;
+}
+
+.timeline-content {
+    background: #ecf0f1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 a {
     color: #1abc9c;
     text-decoration: none;
@@ -108,10 +180,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-.timeline {
-    background: #ecf0f1;
-    padding: 10px;
-    border-radius: 5px;
 }
