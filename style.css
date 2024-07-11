@@ -90,17 +90,20 @@ img {
     height: 150px;
     border-radius: 35%;
     object-fit: cover;
-    margin-right: 20px;
 }
 
 .profile {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.profile img {
+    margin-right: 20px;
 }
 
 .profile .info {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
 }
 
 .passions {
@@ -180,4 +183,38 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress.beginning {
+    width: 20%;
+    background: yellow;
+}
+
+.progress.middle {
+    width: 50%;
+    background: yellow;
+}
+
+.progress.final {
+    width: 95%;
+    background: blue;
+}
+
+.progress.finish {
+    width: 100%;
+    background: green;
 }
